@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Messenger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="auth-container">
+        <h1>Anonymous Messenger</h1>
+        <div id="login-container">
+            <input type="email" id="email-input" placeholder="Enter your email">
+            <button id="get-id-button">Get Chat ID</button>
+            <p id="chat-id-display"></p>
+        </div>
+        <div id="chat-container" style="display: none;">
+            <p id="status">No one here yet...</p>
+            <input type="text" id="chat-id-input" placeholder="Enter chat ID">
+            <button id="join-chat-button">Join Chat</button>
+            <div id="messages"></div>
+            <input type="text" id="message-input" placeholder="Type a message" style="display: none;">
+            <button id="send-button" style="display: none;">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
